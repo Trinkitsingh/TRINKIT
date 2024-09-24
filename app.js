@@ -100,5 +100,5 @@ function incrementSignupCounter() {
     let count = parseInt(localStorage.getItem('signupCount')) || 0;
     count++;
     localStorage.setItem('signupCount', count);
-    initializeSignUpCounter(); // Update counter display
+    initializeSignUpCounter(); // Update counter display immediately
 }
