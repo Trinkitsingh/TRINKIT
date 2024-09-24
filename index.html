@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TRINKIT - Your go-to solution for all tech problems. Sign up to get started today!">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>TRINKIT</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="nav-container">
+        <nav class="navbar">
+            <h1 id="navbar-logo">TRINKIT</h1>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-links">Home</a></li>
+                <li><a href="services.html" class="nav-links">Services</a></li>
+                <li><a href="about-us.html" class="nav-links">About Us</a></li>
+                <li><a href="contact-us.html" class="nav-links">Contact Us</a></li>
+                <li><a href="#" class="nav-links nav-links-btn">Sign Up</a></li>
+
+            </ul>            
+        </nav>
+    </div>
+        <div id="signup-counter-container">
+        <p>Signups: <span id="signup-counter">0</span></p>
+        </div>
+    
+    <!-- Main Content Section -->
+    <div class="main">
+        <div class="main-container">
+            <div class="main-content">
+                <h1>Have a problem with technology?</h1>
+                <p>Don’t worry, I’m here to help with all your tech problems.</p>
+                <button class="main-btn"><a href="#">Get Started</a></button>
+            </div>
+            <div class="main-img-container">
+                <img src="images/undraw_bug_fixing_oc-7-a (1).svg" alt="Person fixing a bug" id="main-image">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="email-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-content-left">
+                <img src="images/programmer.svg" alt="Programmer working on a computer">
+            </div>
+            <div class="modal-content-right">
+                <form action="/" method="GET" class="modal-form" id="form">
+                    <h1>Get started today! Create your account below.</h1>
+                    <div class="form-validation">
+                        <div class="form-validation">
+                            <input type="text" class="modal-input" id="name" name="name" placeholder="Enter your name" required>
+                            <p class="error-message" id="nameError">Please enter your name</p>
+                        </div>    
+                        
+                        <div class="form-validation">
+                            <input type="email" class="modal-input" id="email" name="email" placeholder="Enter your email" required>
+                            <p class="error-message" id="emailError">Please enter a valid email address</p>
+                        </div> 
+                        
+                        <div class="form-validation">
+                            <input type="password" class="modal-input" id="password" name="password" placeholder="Create a password" required minlength="8">
+                            <p class="error-message" id="passwordError">Password must be at least 8 characters</p>
+                        </div> 
+
+                        <div class="form-validation">
+                            <input type="password" class="modal-input" id="password-confirm" name="passwordConfirm" placeholder="Confirm your password" required>
+                            <p class="error-message" id="confirmPasswordError">Passwords must match</p>
+                        </div>                        
+                    </div>
+                    <input type="submit" class="modal-input btn" value="Sign Up">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Social Media Links -->
+    <div class="social-media">
+        <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">Twitter</a>
+        <!-- Add other social media links as needed -->
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
